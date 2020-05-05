@@ -6,12 +6,11 @@
 class TextScramble {
   constructor(el) {
     this.el = el;
-    this.chars = '!@#$%^&*():{}|+_?><,./;[]';
-    //this.chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    this.chars = '!@#$%^&*():{}|+_?><,./;[]abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    //this.chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     this.update = this.update.bind(this);
   }
   setText(newText) {
-    // const oldText = this.el.innerText;
     const oldText = this.el.innerText;
     const length = Math.max(oldText.length, newText.length);
     const promise = new Promise((resolve) => this.resolve = resolve);
@@ -59,10 +58,6 @@ class TextScramble {
   }
 }
 
-// ——————————————————————————————————————————————————
-// Example
-// ——————————————————————————————————————————————————
-
 const phrases = [
   'Ty Arpornsuksant',
   'Lifelong Student',
@@ -86,3 +81,7 @@ const next = () => {
 }
 
 next();
+
+// function hideOpening(){
+//   $(".opening").hide();
+// }
