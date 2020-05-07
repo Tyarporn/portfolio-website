@@ -3,10 +3,13 @@
 
 <head>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script language="Javascript" src="portfolio.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="portfolio.css">
   <link rel="stylesheet" href="https://use.typekit.net/pux6lic.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+
   <title>Ty's work</title>
 </head>
 
@@ -18,25 +21,54 @@
     <a href="#other-work">Other Work</a>
     <a href="#contact">Contact</a>
   </div>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+  <span id = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
 
-  <div class="welcome">
-    <p>Hi my name is Ty and welcome to my website</p>
+  <div id = "welcome" class="welcome">
+    Hi my name is Ty and welcome to my&nbsp; <div class = "animate-typing"
+                                                      data-type-speed="200"
+                                                      data-type-delay="200"
+                                                      data-remove-speed="50"
+                                                      data-remove-delay="500"
+                                                      data-animate-loop="false">
+                                                       website| personal internet space|
+                                                      comfy desktop| dedicated workspace|
+                                                      super secret vault| treasure trove|
+                                                      techno toybox| portfolio website.|
+                                                      </div>
   </div>
-
+<hr>
   <div class = "page" id = "about-me">
-A little bit about me...
+    <!-- A little bit about me <a href ="#welcome"><i class = "arrowup"></i></a> -->
+    Let's get to know each other!<br>
+    <img id = "mepic" src = "media/portrait.jpeg"></img><br>
+    <p>Hello there! My name is Ty and welcome to my site! I am a mobile technologist/coding geek/website developer
+      based in Marietta, GA/Brooklyn, NY and student at the IDM program at NYU. I am interested in the intersection of
+      beauty, technology, and society. More specifically, I am facinated with human-computer
+      interactions, looking at how we as humans are adapting to an ever growing presence of tech in the world. </p>
     </div>
+<hr>
   <div class = "page" id = "coding">
-  Heres some cool code
+    Looking for some <code>cool code</code> ?
+    <div id = 'sketch-holder'></div>
+<br>
+    <div id="code-links">
+      <a href="https://github.com/Tyarporn/2048">2048</a>
+      <a href="https://github.com/Tyarporn/battleship">Battleship</a>
+      <a href="https://editor.p5js.org/ta1693/sketches/pDmdGh4sy">Motion based running game</a>
+      <a href="https://www.openprocessing.org/sketch/770798">Slooderman</a>
     </div>
+</div>
+<hr>
   <div class = "page" id = "other-work">
-    Here is some other work
+    Or how about some <em>other work</em> ?
     </div>
+<hr>
   <div class = "page" id = "contact">
-      Here is my contact information
+      Or are you just looking to contact me ?
     </div>
-
+    <hr>
+  <script language="Javascript" src="portfolio.js"></script>
+  <script src="jquery.animateTyping.js"></script>
 </body>
 
 </html>

@@ -4,9 +4,18 @@ html{
 body {
   font-family: "museo-sans", sans-serif;
 }
+a{
+  color: inherit;
+  text-decoration: none;
+}
+a:hover{
+  color: lightgrey;
+}
 .welcome{
   height: 1000px;
   width: 100%;
+  /* border: 1px black;
+  padding:10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +31,7 @@ body {
 .sidenav {
   height: 100%;
   width: 0;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -31,6 +40,7 @@ body {
   transition: 0.5s;
   padding-top: 60px;
 }
+
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -56,8 +66,41 @@ body {
 .page{
   height: 1000px;
   background-color: white;
-  font-size: 3em;
+  font-size: 2.5em;
+  text-align: center;
 }
+.arrowup{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.website{
+  color: black
+}
+#coding.page{
+  height: 500px
+}
+#contact.page{
+  height: 300px;
+}
+
+#menu{
+  position: fixed;
+}
+#mepic{
+  height: 336px;
+  width: 252px;
+}
+
+#code-links{
+  display:flex;
+  justify-content: space-between;
+  font-size: 1em
+}
+
 
 
 @media screen and (max-height: 450px) {
