@@ -11,8 +11,47 @@ a{
 a:hover{
   color: lightgrey;
 }
+.parallax1 {
+  /* The image used */
+  background-image: url("media/arch.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("media/code-shot.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax3 {
+  /* The image used */
+  background-image: url("media/shroudstatue.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .welcome{
-  height: 1000px;
+  height: 700px;
   width: 100%;
   /* border: 1px black;
   padding:10px; */
@@ -21,6 +60,8 @@ a:hover{
   align-items: center;
   /* position: absolute; */
   background-color: white;
+   /* background-image: url('media/arch.jpg');
+   background-attachment: fixed; */
   font-size: 3em;
   animation: fadein 5s;
  }
@@ -65,7 +106,7 @@ a:hover{
 
 .page{
   height: 1000px;
-  background-color: white;
+  /* background-color: white; */
   font-size: 2.5em;
   text-align: center;
 }
@@ -84,21 +125,27 @@ a:hover{
   height: 500px
 }
 #contact.page{
-  height: 300px;
+  height: 100px;
 }
 
 #menu{
   position: fixed;
 }
+
 #mepic{
   height: 336px;
   width: 252px;
 }
-
+#about-me{
+  height: 800px
+}
 #code-links{
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 1em
+}
+#contact-info{
+  font-size: 0.5em
 }
 
 

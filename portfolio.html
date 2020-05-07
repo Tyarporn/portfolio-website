@@ -16,6 +16,7 @@
 <body>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#welcome">Home</a>
     <a href="#about-me">About me</a>
     <a href="#coding">Coding</a>
     <a href="#other-work">Other Work</a>
@@ -23,30 +24,34 @@
   </div>
   <span id = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
 
+<!-- creds to https://www.jqueryscript.net/animation/animate-typing.html for typing stuff and also kiana bc i stole this from her code :D -->
   <div id = "welcome" class="welcome">
-    Hi my name is Ty and welcome to my&nbsp; <div class = "animate-typing"
-                                                      data-type-speed="200"
-                                                      data-type-delay="200"
-                                                      data-remove-speed="50"
-                                                      data-remove-delay="500"
-                                                      data-animate-loop="false">
-                                                       website| personal internet space|
-                                                      comfy desktop| dedicated workspace|
-                                                      super secret vault| treasure trove|
-                                                      techno toybox| portfolio website.|
-                                                      </div>
+    <div class="boxed">
+      Hi my name is Ty and welcome to my&nbsp; <div class = "animate-typing"
+                                                        data-type-speed="200"
+                                                        data-type-delay="200"
+                                                        data-remove-speed="50"
+                                                        data-remove-delay="500"
+                                                        data-animate-loop="true">
+                                                         website| personal internet space|
+                                                        comfy desktop| dedicated workspace|
+                                                        super secret vault| treasure trove|
+                                                        techno toybox| portfolio website.|
+                                                        </div>
+    </div>
+
   </div>
-<hr>
+<div class="parallax1"></div>
   <div class = "page" id = "about-me">
     <!-- A little bit about me <a href ="#welcome"><i class = "arrowup"></i></a> -->
-    Let's get to know each other!<br>
+    A little bit about me<br>
     <img id = "mepic" src = "media/portrait.jpeg"></img><br>
     <p>Hello there! My name is Ty and welcome to my site! I am a mobile technologist/coding geek/website developer
       based in Marietta, GA/Brooklyn, NY and student at the IDM program at NYU. I am interested in the intersection of
       beauty, technology, and society. More specifically, I am facinated with human-computer
       interactions, looking at how we as humans are adapting to an ever growing presence of tech in the world. </p>
     </div>
-<hr>
+<div class="parallax2"></div>
   <div class = "page" id = "coding">
     Looking for some <code>cool code</code> ?
     <div id = 'sketch-holder'></div>
@@ -58,13 +63,21 @@
       <a href="https://www.openprocessing.org/sketch/770798">Slooderman</a>
     </div>
 </div>
-<hr>
+<div class="parallax3"></div>
   <div class = "page" id = "other-work">
     Or how about some <em>other work</em> ?
+    <p>wip :/</p>
     </div>
-<hr>
+    <hr>
   <div class = "page" id = "contact">
       Or are you just looking to contact me ?
+      <div id="contact-info">
+        <br>
+        <a href="mailto: tyler.arporn741@gmail.com">Email</a>
+        <a href="https://www.facebook.com/ty.arpornsuksant?ref=bookmarks">Facebook</a>
+        <a href="https://www.instagram.com/a_shrubbery_/">Instagram</a>
+        <a href="https://www.linkedin.com/in/ty-arpornsuksant-b036a817a/">LinkedIn</a>
+      </div>
     </div>
     <hr>
   <script language="Javascript" src="portfolio.js"></script>
