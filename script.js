@@ -64,7 +64,6 @@ const phrases = [
   'Adaptive Creative Coder',
   'Positive Go-Getter',
   'Forward Thinking Technologist',
-  'Ambitious Dynamo',
   'Your next problem solver.'
 ];
 
