@@ -181,5 +181,8 @@ a:hover{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  .page {font-size: 0.5em}
+}
+
+@media screen and (max-width: 1021px) {
+    .page {font-size: 1em;}
 }
