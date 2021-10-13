@@ -164,7 +164,10 @@ a:hover{
   font-size: 1em
 }
 #contact-info{
-  font-size: 0.5em
+  font-size: 0.5em;
+  text-align: center;
+
+
 }
 #sketch-holder{
     display:flex;
