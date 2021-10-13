@@ -83,7 +83,8 @@
 // }
 balls = []
 function setup(){
-  var canvas = createCanvas(displayWidth,500);
+  myWidth = displayWidth-16
+  var canvas = createCanvas(myWidth,500);
   // var canvas = createCanvas(w,500);
   background(240);
   for(let i = 50; i < displayWidth; i+=100){
