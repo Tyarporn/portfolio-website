@@ -64,6 +64,7 @@ const phrases = [
   'Adaptive Creative Coder',
   'Positive Go-Getter',
   'Forward Thinking Technologist',
+  'ไทย -ish',
   'Your next problem solver.'
 ];
 

@@ -1,31 +1,34 @@
 function setup(){
-  var canvas = createCanvas(550,300);
+  var canvas = createCanvas(500,500);
+  background(240);
+  b1 = new Ball(50,random(300));
+	b2 = new Ball(150,random(300));
+	b3 = new Ball(250,random(300));
+	b4 = new Ball(350,random(300));
+	b5 = new Ball(450,random(300));
+
+
+	gslider = createSlider(0,4,2,0.01);
+  gslider.parent('sketch-holder');
+  // gslider.position(0,0,'relative');
   canvas.parent('sketch-holder');
-
-  b1 = new Ball(78.57,random(300));
-	b2 = new Ball(157.14,random(300));
-	b3 = new Ball(235.71,random(300));
-	b4 = new Ball(314.38,random(300));
-	b5 = new Ball(392.85,random(300));
-	b6 = new Ball(471.42,random(300));
-
-
 }
-function draw(){
-  background(250)
-	balls = [b1,b2,b3,b4,b5,b6];
 
+function draw(){
+  background(240);
+	balls = [b1,b2,b3,b4,b5];
+	background(240);
+	fill(0,255,0);
 	for(let i = 0; i < balls.length; i++){
 		balls[i].display();
 
   if(mouseIsPressed && dist(mouseX, mouseY, 50 + i *100, height -40) < 40)
-    balls[i].bounce(2);
+    balls[i].bounce(gslider.value());
    else
-     balls[i].reset(2);
+     balls[i].reset(gslider.value());
 	}
 
 }
-
 class Ball {
   constructor ( _x,  _y){ //the constructor! where we can inititalize variables
     this.xpos = _x;
