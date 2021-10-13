@@ -86,7 +86,6 @@ a:hover{
   padding-top: 60px;
 }
 
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -153,7 +152,6 @@ a:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 #about-me{
   height: 800px
@@ -168,15 +166,11 @@ a:hover{
 #contact-info{
   font-size: 0.5em;
   text-align: center;
-
-
 }
 #sketch-holder{
     display:flex;
     flex-direction: column;
 }
-
-
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -184,5 +178,5 @@ a:hover{
 }
 
 @media screen and (max-width: 1021px) {
-    .page {font-size: 1em;}
+    .page {font-size: 80%;}
 }
