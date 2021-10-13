@@ -150,8 +150,10 @@ a:hover{
 #mepic{
   height: 336px;
   width: 252px;
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 #about-me{
   height: 800px
