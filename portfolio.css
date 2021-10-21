@@ -7,10 +7,6 @@ body {
 a{
   color: inherit;
   text-decoration: none;
-  font-size: 0.75em
-}
-p{
-  font-size: 0.75em
 }
 a:hover{
   color: lightgrey;
@@ -57,15 +53,10 @@ a:hover{
 .welcome{
   height: 700px;
   width: 100%;
-  /* border: 1px black;
-  padding:10px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: absolute; */
   background-color: white;
-   /* background-image: url('media/arch.jpg');
-   background-attachment: fixed; */
   font-size: 3em;
   animation: fadein 5s;
  }
@@ -108,11 +99,7 @@ a:hover{
 }
 
 .page{
-  /* height: 1000px; */
-  /* background-color: white; */
-  font-size: 2.5em;
-  font-size: 3vw;
-  /* text-align: center; */
+  font-size: 2vw;
 }
 .arrowup{
   border: solid black;
@@ -129,9 +116,7 @@ a:hover{
 .title{
   text-align: center;
 }
-/* #about-me.page{
 
-} */
 #coding.page{
   height: 900px;
 }
@@ -162,7 +147,7 @@ a:hover{
   flex-direction: column;
   flex-wrap: wrap;
   align-items: left;
-  font-size: 1em
+  /* font-size: 1em */
 }
 #contact-info{
   font-size: 0.5em;
@@ -178,7 +163,7 @@ a:hover{
   .sidenav a {font-size: 18px;}
 }
 
-@media screen and (max-width: 1021px) {
+@media screen and (max-width: 600px) {
     .page {font-size: 4vw;}
     .parallax1{
       /* The image used */
@@ -188,9 +173,7 @@ a:hover{
       min-height: 500px;
 
       /* Create the parallax scrolling effect */
-      /* background-attachment: fixed;
       background-position: center;
-      background-repeat: no-repeat;
       background-size: cover; */
     }
     .parallax2{
@@ -201,10 +184,8 @@ a:hover{
       min-height: 500px;
 
       /* Create the parallax scrolling effect */
-      /* background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; */
     }
     .parallax3{
       /* The image used */
@@ -214,9 +195,7 @@ a:hover{
       min-height: 500px;
 
       /* Create the parallax scrolling effect */
-      /* background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; */
     }
 }
