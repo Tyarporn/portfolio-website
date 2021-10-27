@@ -62,8 +62,8 @@ const phrases = [
   'Ty Arpornsuksant',
   'Lifelong Student',
   'Adaptive Creative Coder',
-  'Positive Go-Getter',
-  'Forward Thinking Technologist',
+  'Optimistic Futurist',
+  'Enthusiastic Traveler',
   'ไทย -ish',
   'Your next problem solver.'
 ];
