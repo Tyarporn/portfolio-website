@@ -51,7 +51,8 @@ a:hover{
   background-size: cover;
 }
 .welcome{
-  height: 700px;
+  /* height: 700px; */
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -100,6 +101,7 @@ a:hover{
 
 .page{
   font-size: 2vw;
+  height: 100vh;
 }
 .arrowup{
   border: solid black;
@@ -116,18 +118,18 @@ a:hover{
 .title{
   text-align: center;
 }
-
+#about_me_text.page{
+  height: 100vh;
+}
 #coding.page{
-  height: 900px;
+  height: 100vh;
+}
+#other-work.page{
+  height: 100vh;
 }
 #contact.page{
   height: 100px;
 }
-
-#other-work.page{
-  height: 500px;
-}
-
 #menu{
   position: fixed;
 }
@@ -138,9 +140,6 @@ a:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-#about-me{
-  height: 800px
 }
 #links{
   display:flex;
