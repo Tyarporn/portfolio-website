@@ -2,7 +2,6 @@ balls = []
 function setup(){
   myWidth = displayWidth-16
   var canvas = createCanvas(myWidth,500);
-  // var canvas = createCanvas(w,500);
   background(240);
   for(let i = 50; i < displayWidth; i+=100){
     balls.push(new Ball(i,(i-50)/5));
@@ -32,7 +31,7 @@ function draw(){
 
 }
 class Ball {
-  constructor ( _x,  _y){ //the constructor! where we can inititalize variables
+  constructor ( _x,  _y){
     this.xpos = _x;
     this.ypos = _y;
     this.xspeed = 3;
@@ -72,7 +71,8 @@ reset(gravity){
      this.yspeed += gravity;
      this.ypos+=this.yspeed;
      if(this.ypos > height - 20){
-       this.yspeed *= -this.damp;
+       // this.yspeed *= -this.damp;
+       this.yspeed *= -1;
        this.ypos=(height-20);
      }
    }
