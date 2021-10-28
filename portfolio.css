@@ -141,6 +141,13 @@ a:hover{
   margin-left: auto;
   margin-right: auto;
 }
+#cream{
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 #links{
   display:flex;
   flex-direction: column;
