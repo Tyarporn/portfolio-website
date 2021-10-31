@@ -101,7 +101,7 @@ a:hover{
 
 .page{
   font-size: 2vw;
-  height: 100vh;
+  height: auto;
 }
 .arrowup{
   border: solid black;
@@ -118,7 +118,7 @@ a:hover{
 .title{
   text-align: center;
 }
-#info.page{
+/* #info.page{
   height: 100vh;
 }
 #coding.page{
@@ -126,7 +126,7 @@ a:hover{
 }
 #other-work.page{
   height: 100vh;
-}
+} */
 #contact.page{
   height: 100px;
 }
