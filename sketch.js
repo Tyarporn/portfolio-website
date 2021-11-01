@@ -12,8 +12,9 @@ function setup(){
 
   var myDiv = select('#coding');
   var myWidth = myDiv.style.width;
-    console.log("mydiv "  + myDiv);
-    console.log("mywidth " + displayWidth)
+    // console.log("mydiv "  + myDiv);
+    // console.log("mywidth " + displayWidth)
+  console.log("Why are you looking at my code? hmmmmmmmmmmmmmmm")
 }
 
 function draw(){

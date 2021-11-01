@@ -116,6 +116,9 @@ a:hover{
 }
 
 .title{
+  padding-top: : 50px;
+  padding-bottom: 10px;
+  font-size: 3vw;
   text-align: center;
 }
 /* #info.page{
@@ -127,9 +130,9 @@ a:hover{
 #other-work.page{
   height: 100vh;
 } */
-#contact.page{
+/* #contact.page{
   height: 100px;
-}
+} */
 #menu{
   position: fixed;
 }
@@ -156,7 +159,7 @@ a:hover{
   /* font-size: 1em */
 }
 #contact-info{
-  font-size: 0.5em;
+  font-size: 1em;
   text-align: center;
 }
 #sketch-holder{
@@ -171,37 +174,9 @@ a:hover{
 
 @media screen and (max-width: 600px) {
     .page {font-size: 4vw;}
-    .parallax1{
-      /* The image used */
-      background-image: url("media/arch.jpg");
-
-      /* Set a specific height */
-      min-height: 500px;
-
-      /* Create the parallax scrolling effect */
-      background-position: center;
-      background-size: cover; */
-    }
-    .parallax2{
-      /* The image used */
-      background-image: url("media/code-shot.png");
-
-      /* Set a specific height */
-      min-height: 500px;
-
-      /* Create the parallax scrolling effect */
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .parallax3{
-      /* The image used */
-      background-image: url("media/nice_building.png");
-
-      /* Set a specific height */
-      min-height: 500px;
-
-      /* Create the parallax scrolling effect */
-      background-position: center;
-      background-repeat: no-repeat;
+    .title{font-size: 5vw;}
+    #contact-info{
+      font-size: 1em;
+      text-align: center;
     }
 }
