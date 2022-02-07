@@ -44,7 +44,6 @@
   </div>
 <div class="parallax1"></div>
   <div class = "page" id = "about-me">
-    <!-- A little bit about me <a href ="#welcome"><i class = "arrowup"></i></a> -->
     <div class="title">
           <b>About Me</b>
     </div>
@@ -81,14 +80,14 @@
     <br>
     <div id="links">
       <ul>
-        <li><a href="https://github.com/Tyarporn/2048">2048 (Java)</a></li>
-        <li><a href="https://github.com/Tyarporn/battleship">Battleship (Java)</a></li>
-        <li><a href="https://github.com/Tyarporn/web-nyu-idm">Mishmash of Web Development Coursework (HTML, CSS, Javascript)</a></li>
-        <li><a href="https://openprocessing.org/sketch/1237636">Bars (p5.js)</a></li>
-        <li><a href="https://github.com/Tyarporn/OpenAI-Gym-Car-Race">Self-Driving Car Simulation (Python)</a></li>
         <li><a href="https://github.com/Tyarporn/sosv-scraper">Web Scraper for SOSV (Python)</a></li>
         <li><a href="https://github.com/Tyarporn/techstars_webscraper">Web Scraper for TechStars (Python)</a></li>
         <li><a href="https://github.com/Tyarporn/yc-webscraper">Web Scraper for Y-Combinator (Python)</a></li>
+        <li><a href="https://github.com/Tyarporn/OpenAI-Gym-Car-Race">Self-Driving Car Simulation (Python)</a></li>
+        <li><a href="https://github.com/Tyarporn/web-nyu-idm">Mishmash of Web Development Coursework (HTML, CSS, Javascript)</a></li>
+        <li><a href="https://openprocessing.org/sketch/1237636">Bars (p5.js)</a></li>
+        <li><a href="https://github.com/Tyarporn/battleship">Battleship (Java)</a></li>
+        <li><a href="https://github.com/Tyarporn/2048">2048 (Java)</a></li>
       </ul>
     </div>
     <br>
@@ -100,7 +99,7 @@
     </div>
 
     <br>
-    <img id = "cream" src = "media/cream.png"></img>
+    <img id = "idm_logo" src = "media/idm_logo.png"></img>
     <br>
     <!-- <div id = 'sketch-holder2'></div> -->
     <div id="links">
@@ -132,6 +131,26 @@
     </div>
   <script language="Javascript" src="portfolio.js"></script>
   <script src="jquery.animateTyping.js"></script>
+
+  <!-- <script>
+  $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".page").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom+200) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(1000,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(1000,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script> -->
+
 </body>
 
 </html>
