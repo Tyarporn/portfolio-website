@@ -6,9 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="portfolio.css">
   <link rel="stylesheet" href="https://use.typekit.net/pux6lic.css">
+  <!-- p5 stuff -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
-  <script src="sketch.js"></script>
+  <script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="sketch.js"></script>
+  <!-- react stuff -->
+  <script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+  <script type="text/babel">
+  // import React from "react"
+  function get_date(){
+    let newDate = new Date();
+    let date = newDate.getDate();
+    let month = newDate.getMonth();
+    let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let year = newDate.getFullYear();
+    return <a id = "datelink" href="https://github.com/Tyarporn/portfolio-website"> Made with love on {monthNames[month]} {date}, {year} </a>
+  }
+
+  ReactDOM.render(get_date(),
+    document.getElementById('react1'));
+  </script>
+
+
   <!-- <script src="sketch2.js"></script> -->
 
   <title>Ty' Portfolio</title>
@@ -22,6 +44,7 @@
     <a href="#coding">Software Projects</a>
     <a href="#other-work">Other Work</a>
     <a href="#contact">Contact</a>
+    <div id="react1"></div>
   </div>
   <!-- <span id = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span> -->
   <span id = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
