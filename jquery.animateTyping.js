@@ -1,12 +1,4 @@
 ; ($ => {
-    /*
-     * @description     Animate typing text in an element
-     * @param   {HTML Element} elementTyping - The element which the text be typed in it
-     * @param   {string} text - The text that must be typed
-     * @param   {number} speed(ms) - The speed of typing each character
-     * @param   {number} delay(ms) - The delay before starting to type
-     * @return  {Promise}
-    */
     const typeText = (elementTyping, text, speed, delay) =>
         new Promise(resolve =>
             // Use setTimeout to controll the delay before starting
@@ -21,16 +13,9 @@
                 }, speed);
             }, delay));
 
-    /*
-     * @description     Animate removing text from an element
-     * @param   {HTML Element} elementTyping - The element which the text be removed from it
-     * @param   {number} speed(ms) - The speed of removing each character
-     * @param   {number} delay(ms) - The delay before starting to remove
-     * @return  {Promise}
-    */
     const removeText = (elementTyping, speed, delay) =>
         new Promise(resolve =>
-            // Use setTimeout to controll the delay before starting
+            // Use setTimeout to control the delay before starting
             setTimeout(function () {
                 var text = elementTyping.text();
                 var removing = setInterval(function () {
@@ -43,12 +28,6 @@
                 }, speed);
             }, delay));
 
-    /*
-     * @description     Show the cursor at the end of the text
-     * @param   {HTML Element} elementTyping - The element to add an index to it
-     * @param   {number} index - The index of each .animated-typing element
-     * @param   {number} speed(ms) - The speed of blinking cursor
-    */
     const showCursor = (elementTyping, index, speed) => {
         // Seperate each element by adding an index attribute to them to reach individual speed for each of them
         elementTyping.attr('data-animate-index', index);
@@ -63,10 +42,6 @@
        `);
     }
 
-    /*
-     * @description     Show the cursor at the end of the text
-     * @param   {number} speed(ms) - The speed of blinking cursor
-    */
     $('.animate-typing').each(function (index) {
         const elementTyping = $(this);
         // The speed of typing each character

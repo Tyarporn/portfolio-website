@@ -1,4 +1,4 @@
-//credits to https://codepen.io/soulwire/pen/mErPAK (Justin Windle)
+// credits to https://codepen.io/soulwire/pen/mErPAK (Justin Windle)
 // ——————————————————————————————————————————————————
 // TextScramble
 // ——————————————————————————————————————————————————
